@@ -12,6 +12,10 @@
   margin: 0 auto 20px auto;
 }
 
+#bag.burst {
+  background-image: url('img/bag-burst.png');
+}
+
 #bag-health div {
   height: 20px;
   background-color: crimson;

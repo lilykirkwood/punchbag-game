@@ -14,17 +14,17 @@
   <div id="app">
 
     <!-- bag img -->
-    <div id="bag"></div>
+    <div id="bag" :class="{burst: ended}"></div>
 
     <!-- bag health -->
     <div id="bag-health">
-      <div></div>
+      <div :style="{width: health + '%'}"></div>
     </div>
 
     <!-- game controls -->
     <div id="controls">
-      <button>Punch</button>
-      <button>Restart</button>
+      <button v-show="!ended" @click="punch">Punch</button>
+      <button @click="restart">Restart</button>
     </div>
 
   </div>
